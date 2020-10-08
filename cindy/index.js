@@ -21,18 +21,18 @@ let sandGrains = 20;
 let starsInSky = 5;
 
 //a) atoms is greater than starsInSky AND atoms is greater than sandGrains.
-console.log("a " + (atoms > starsInSky > sandGrains));
-//It's false only the first statement is true and the second one is false. so true * false = false.
+console.log("a " + (atoms > starsInSky) && atoms > sandGrains);
+//It's false only the first statement is true and the second one is false and we are using && operator.
 
 //b) atoms is NOT equal to sandGrains.
-console.log("b " + (atoms != sandGrains));
+console.log("b " + (atoms !== sandGrains));
 //It's true because It's not equal =  10 is not the same as 20
 
 //c) starsInSky is less than sandGrains OR starsInSky is greater than atoms.
 console.log("c " + (starsInSky < sandGrains || starsInSky > atoms)); //it's true because the || is taking the very first "true" result starsInSky < sandGrains.
 
 //d) atoms is equal to starsInSky OR atoms is NOT equal to sandGrains.
-console.log("d " + (atoms == starsInSky || atoms != sandGrains)); //it's true because we have the || operator. and it's rule is : it will take every true statement. even the first statement is "false", || is grabbing the second result "true"
+console.log("d " + (atoms == starsInSky || atoms !== sandGrains)); //it's true because we have the || operator. and it's rule is : it will take every true statement. even the first statement is "false", || is grabbing the second result "true"
 
 //e) atoms is greater than or equal to 10 AND sandGrains is less than or equal to 10.
 console.log("e " + (atoms >= 10 && sandGrains <= 10));
