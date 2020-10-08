@@ -24,8 +24,8 @@ let starsInSky = 36674393;
 // Check the result of whether:
 
 // a) atoms is greater than starsInSky AND atoms is greater than sandGrains.
-console.log("atoms is greater than starsInSky AND atoms is greater than sandGrains " + (atoms > starsInSky));
-//true - atoms has a bigger number so it is true
+console.log("atoms is greater than starsInSky AND atoms is greater than sandGrains " + (atoms > starsInSky && atoms > sandGrains));
+//false - && looks for the first false which is the second statment
 
 
 // b) atoms is NOT equal to sandGrains.
@@ -36,6 +36,7 @@ console.log("atoms is NOT equal to sandGrains " + (atoms !== sandGrains));
 // c) starsInSky is less than sandGrains OR starsInSky is greater than atoms.
 console.log("starsInSky is less than sandGrains OR starsInSky is greater than atoms " + (starsInSky < sandGrains || starsInSky > atoms));
 //true - the first statment is true, and || is looking for the first true 
+
 
 
 // d) atoms is equal to starsInSky OR atoms is NOT equal to sandGrains.
