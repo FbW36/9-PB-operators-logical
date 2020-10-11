@@ -11,8 +11,8 @@ console.log(!(dogIsBetter && catIsBetter));
 let atoms = 30;
 let sandGrains = 20;
 let starsInSky = 10;
-// ans 3 a
-console.log("q3a:", atoms > starsInSky && atoms > sandGrains);
+// ans 3
+console.log(`Q3a: ${atoms > starsInSky && atoms > sandGrains}`);
 
 // ans 3 b
 console.log("q3b:", atoms !== sandGrains);
